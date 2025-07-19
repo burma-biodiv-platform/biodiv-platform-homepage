@@ -1,8 +1,9 @@
 async function includeLayout(id, file) {
-  const response = await fetch(file);
-  const html = await response.text();
-  document.getElementById(id).innerHTML = html;
-}
+    const response = await fetch(file);
+    const html = await response.text();
+    document.getElementById(id).innerHTML = html;
+  }
 
-includeLayout("header-placeholder", "layouts/header.html");
-includeLayout("footer-placeholder", "layouts/footer.html");
+  includeLayout("header-placeholder", "layouts/header.html");
+  includeLayout("footer-placeholder", "layouts/footer.html");
+  includeLayout("scripts-placeholder", "layouts/scripts.html");
