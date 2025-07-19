@@ -1,4 +1,3 @@
-<!-- layouts/scripts.html -->
 <script>
   async function includeLayout(id, file) {
     const response = await fetch(file);
